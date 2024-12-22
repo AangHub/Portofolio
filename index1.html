@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Angga Rizwar</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+      }
+      .header-section {
+        background-color: #1e1e1e;
+        text-align: center;
+        padding: 20px 0;
+      }
+      .video-section iframe {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .tool-card {
+        border: 1px solid #444;
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px;
+        background-color: #1e1e1e;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .tool-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+      }
+      .btn-pdf {
+        background-color: #d9534f;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .btn-pdf:hover {
+        background-color: #c9302c;
+      }
+      .navbar {
+        background-color: #1e1e1e;
+      }
+      .navbar-brand {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Angga Rizwar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#landing">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Saya</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Komponen Pembelajaran
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#learning-components">TPACK Framework</a></li>
+                  <li><a class="dropdown-item" href="#kompetensi-teknologi">Kompetensi Teknologi</a></li>
+                  <li><a class="dropdown-item" href="#desain-pembelajaran">Desain Pembelajaran</a></li>
+              </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="landing" class="text-center bg-dark py-5">
+      <div class="container">
+        <h1 class="display-4">Selamat Datang di Portfolio Saya</h1>
+        <p class="lead">
+          Saya Angga Rizwar, Mahasiswa Pendidikan Teknik Informatika,
+          Universitas Negeri Malang.
+        </p>
+        <img
+          src="https://via.placeholder.com/600x300"
+          alt="Gambar Ilustrasi"
+          class="img-fluid rounded mt-4"
+        />
+      </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">TENTANG SAYA</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>
+              Saya adalah seseorang yang penuh semangat dalam mengejar tujuan,
+              khususnya dalam bidang pendidikan dan teknologi. Saya percaya
+              bahwa pendidikan memiliki kekuatan untuk mengubah hidup setiap
+              individu, terutama melalui pendekatan kreatif seperti integrasi
+              teknologi, desain pembelajaran yang menarik, dan pengalaman
+              belajar berbasis kolaborasi.
+            </p>
+            <p>
+              Selain itu, saya memiliki fokus pada pengembangan komunitas
+              pendidikan, terutama di daerah-daerah yang membutuhkan akses lebih
+              baik ke sumber daya pendidikan. Kerja sama tim dan komunikasi yang
+              efektif menjadi kunci keberhasilan dalam setiap proyek yang saya
+              lakukan.
+            </p>
+            <p>
+              Ketika tidak sibuk dengan proyek atau tugas akademik, saya senang
+              mengeksplorasi ide-ide baru, berbagi pengetahuan dengan komunitas,
+              dan mencari solusi inovatif untuk berbagai tantangan yang
+              kompleks.
+            </p>
+            <a href="#" class="btn btn-primary mt-3">My CV</a>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://via.placeholder.com/500x300"
+              alt="Foto Profil"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Komponen Pembelajaran -->
+    <section id="learning-components" class="bg-dark py-5">
+      <div class="container my-5">
+        <div class="row shadow-lg rounded overflow-hidden">
+          <!-- Image Section -->
+          <div class="col-md-6 p-0">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="TPACK Framework"
+              class="img-fluid w-100 h-100"
+              style="object-fit: cover"
+            />
+          </div>
+          <!-- Content Section -->
+          <div class="col-md-6 p-4">
+            <h2 class="text-uppercase text-danger">TPACK Framework</h2>
+            <p>
+              <strong>Topik:</strong> Technological Pedagogical Content
+              Knowledge
+            </p>
+            <p>
+              Kerangka TPACK (Technological Pedagogical Content Knowledge)
+              merupakan pendekatan yang mengintegrasikan teknologi, pedagogi,
+              dan pengetahuan konten secara efektif. Framework ini membantu guru
+              untuk mendesain pembelajaran yang relevan dengan kebutuhan siswa
+              saat ini.
+            </p>
+            <p>
+              Dengan menggabungkan tiga elemen ini, TPACK memberikan panduan
+              untuk menciptakan pengalaman belajar yang lebih bermakna dan
+              berfokus pada siswa.
+            </p>
+            <a href="shortpaper.pdf" download class="btn btn-primary mt-3"
+              >Unduh Short Paper</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kompetensi-teknologi">
+      <div class="header-section">
+        <h1>Kompetensi Teknologi</h1>
+      </div>
+      <div class="container my-4">
+        <!-- Video Section -->
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <iframe
+              src="asset/chatterpix.mp4"
+              height="300"
+              allowfullscreen
+              autoplay
+              muted
+            ></iframe>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <p>
+              <strong>EdPuzzle:</strong> EdPuzzle adalah platform pembelajaran
+              berbasis video interaktif. Guru dapat menambahkan kuis, catatan,
+              atau pertanyaan ke video yang ada untuk membuat pembelajaran lebih
+              menarik dan efektif.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="row text-center">
+          <!-- Kahoot -->
+          <div class="col-md-4 mb-4 rounded shadow">
+            <div class="tool-card">
+              <img src="https://via.placeholder.com/100" alt="Kahoot Logo" />
+              <h5 class="mt-3">Kahoot</h5>
+              <p>
+                Kahoot ini berisi tes untuk mata pelajaran Matematika, topik
+                bilangan cacah untuk kelas 6 SD.
+              </p>
+            </div>
+          </div>
+          <!-- Pinterest -->
+          <div class="col-md-4 mb-4 rounded shadow">
+            <div class="tool-card">
+              <img src="https://via.placeholder.com/100" alt="Pinterest Logo" />
+              <h5 class="mt-3">Pinterest</h5>
+              <p>
+                Pinterest digunakan sebagai papan visual untuk berbagi inspirasi
+                pembelajaran interaktif.
+              </p>
+            </div>
+          </div>
+          <!-- ChatterPix -->
+          <div class="col-md-4 mb-4 rounded shadow">
+            <div class="tool-card">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="ChatterPix Logo"
+              />
+              <h5 class="mt-3">ChatterPix</h5>
+              <p>
+                ChatterPix memungkinkan siswa membuat animasi sederhana untuk
+                presentasi kreatif.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desain-pembelajaran">
+      <div class="header-section">
+        <h1>DESAIN PEMBELAJARAN</h1>
+      </div>
+
+      <div class="container content-section">
+        <div class="row">
+          <!-- Lesson Plan Image -->
+          <div class="col-md-6">
+            <img
+              src="https://via.placeholder.com/500x500"
+              alt="9 Events of Instruction"
+              class="img-fluid"
+            />
+          </div>
+          <!-- Lesson Plan Description -->
+          <div class="col-md-6">
+            <h4>About Lesson Plan</h4>
+            <p>
+              <strong>Lesson Plan</strong><br />
+              <strong>Teacher:</strong> Angga Rizwar<br />
+              <strong>Learning Objectives:</strong><br />
+              1. Mendeskripsikan fungsi dan manfaat dari pembelajaran
+              informatika<br />
+              2. Menjelaskan sejarah perkembangan teknologi informasi dan
+              tokoh-tokohnya<br />
+              3. Mengenal berbagai bidang studi dan profesi terkait
+              informatika<br />
+              4. Menjelaskan konsep kewargaan digital (digital citizenship)<br />
+              5. Menerapkan etika dan tanggung jawab sebagai warga digital
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <h4>Lesson Structure</h4>
+            <p>
+              <strong>Allotted Time:</strong> 10 menit<br />
+              <strong>Instructional Events:</strong> Pembukaan & Doa<br />
+              <strong>Teacher Actions:</strong><br />
+              - Guru memberikan salam<br />
+              - Guru mengecek kesiapan kelas<br />
+              <br />
+              <strong>Resources:</strong><br />
+              1. Laptop/Komputer<br />
+              2. LCD Projector<br />
+              3. Modul pembelajaran<br />
+              4. LKPD (Lembar Kerja Peserta Didik)<br />
+              5. Video pembelajaran<br />
+              6. Internet<br />
+            </p>
+          </div>
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <a href="lesson-plan.pdf" class="btn-pdf" download
+              >Unduh Lesson Plan</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="py-5">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <!-- Form Section -->
+          <div class="col-md-6 bg-dark p-4 rounded shadow">
+            <h2 class="text-center mb-4">Kontak Saya</h2>
+            <form onsubmit="event.preventDefault(); sendToWhatsApp();">
+              <div class="mb-3">
+                <label for="firstName" class="form-label">Nama Anda</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Type your message here..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Send via WhatsApp
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info Section -->
+          <div
+            class="col-md-4 mt-4 mt-md-0 d-flex flex-column align-items-center"
+          >
+            <h5>Angga Rizwar</h5>
+            <p class="text-muted">Mahasiswa Universitas Negeri Malang</p>
+            <p><strong>Phone:</strong> 085176806055</p>
+            <p>
+              <strong>Email:</strong> angga.rizwar.2305336@students.um.ac.id
+            </p>
+            <div>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 Angga Rizwar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function sendToWhatsApp() {
+        const firstName = document.getElementById("firstName").value;
+        const message = document.getElementById("message").value;
+        const phoneNumber = "6285176806055"; // Ganti dengan nomor WhatsApp Anda
+
+        const url = `https://wa.me/${phoneNumber}?text=Halo,%20saya%20${firstName}.%20Pesan:%20${encodeURIComponent(
+          message
+        )}`;
+        window.open(url, "_blank");
+      }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
