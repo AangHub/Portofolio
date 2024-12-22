@@ -32,7 +32,7 @@
             color: #ffffff;
         }
         .navbar-nav .nav-link:hover {
-            color: #d9534f; /* Warna saat hover */
+            color: tan; /* Warna saat hover */
         }
         .tool-card {
             border: 1px solid #444;
@@ -47,7 +47,7 @@
             box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
         }
         .btn-pdf {
-            background-color: #d9534f;
+            background-color: tan;
             color: white;
             text-decoration: none;
             padding: 10px 20px;
@@ -55,7 +55,7 @@
             font-weight: bold;
         }
         .btn-pdf:hover {
-            background-color: #c9302c;
+            background-color: wheat;
         }
         /* Dropdown Styles */
         .dropdown:hover .dropdown-menu {
@@ -66,7 +66,7 @@
             background-color: rgba(255, 255, 255, 0.9);
         }
         .dropdown-item:hover {
-            background-color: #d9534f; /* Warna saat hover pada dropdown */
+            background-color: wheat; /* Warna saat hover pada dropdown */
             color: #ffffff;
         }
         .p {
@@ -82,9 +82,26 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .construction-message {
+            padding: 30px;
+        }
+        .construction-message h1 {
+            font-size: 3rem;
+            color: #dc3545; /* Warna merah */
+        }
+        .construction-message p {
+            font-size: 1.25rem;
+            color: #6c757d; /* Warna abu-abu */
+        }
     </style>
 </head>
 <body>
+    <section class="d-flex justify-content-center align-items-center bg-light">
+        <div class="construction-message">
+            <h1>🚧 This site is under construction. 🚧</h1>
+            <p>We are working hard to bring you a new experience. Please check back later!</p>
+        </div>
+    </section>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -117,7 +134,7 @@
         <div class="container">
             <h1 class="display-4 text-end">Selamat Datang di Portfolio Saya</h1>
             <p class="lead text-end">Saya Angga Rizwar, Mahasiswa Pendidikan Teknik Informatika, Universitas Negeri Malang.</p>
-            <img src="asset/utama.png" alt="Gambar Ilustrasi" class="img-fluid rounded mt-4" style="width: 500px; height: 300px; object-fit: cover;"/>
+            <img src="asset/edit-removebg-preview (3).png" alt="Gambar Ilustrasi" class="img-fluid rounded mt-4" style="width: 500px; height: 300px; object-fit: cover;"/>
         </div>
     </section>
 
@@ -183,7 +200,7 @@
                       untuk menciptakan pengalaman belajar yang lebih bermakna dan
                       berfokus pada siswa.
                     </p>                    
-                    <a href="shortpaper.pdf" download class="btn btn-primary mt-3">Unduh Short Paper</a>
+                    <a href="shortpaper.pdf" download class="btn btn-pdf mt-3">Unduh Short Paper</a>
                 </div>
             </div>
         </div>
@@ -197,7 +214,7 @@
         <div class="container my-4">
             <div class="row mb-4">
                 <div class="col-md-5 d-flex justify-content-center">
-                    <iframe class="border border-danger" src="asset/chatterpix.mp4" height="300" allowfullscreen autoplay muted></iframe>
+                    <video class="border border-danger" src="asset/chatterpix.mp4" height="300" allowfullscreen autoplay muted></video>
                 </div>
                 <div class="col-md-6 d-flex text-black align-items-center p">
                     <p>
